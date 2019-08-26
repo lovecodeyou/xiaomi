@@ -747,3 +747,12 @@ footer .bottom li a{
     font-size: 12px;
     color: #8b8b8b;
 }
+
+.fixed-img {
+    position: fixed;
+    right: 90px;
+    bottom: 200px;
+    width: 48px;
+    height: 48px;
+    display: none;
+}

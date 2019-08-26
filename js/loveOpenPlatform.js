@@ -77,15 +77,6 @@ $(function () {
     })
 
 
-   
-
-
-
-
-
-
-
-
     function stop() {
         clearInterval(timer);
     }
@@ -117,6 +108,25 @@ $(function () {
         spot.eq(count).css("background", "rgba(255,255,255,1");
         spot.eq(count).siblings().css("background", "rgba(255,255,255,0.4)");
     }
+
+
+    $(".fixed-img").click(function() {
+       $("html,body").animate({scrollTop:0},1000);
+    })
+
+    $(window).scroll(function() {
+        var top = $(window).scrollTop();
+        var win_width = $(window).width();
+        if(win_width <= 768) {
+            return;
+        }
+        if(top < 1000) {
+            $(".fixed-img").fadeOut();
+        }else {
+            $(".fixed-img").fadeIn();
+        }
+
+    })
 
 
 
