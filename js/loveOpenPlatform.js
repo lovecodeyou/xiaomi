@@ -16,7 +16,7 @@ $(function () {
         return false;
     })
 
-    $(".sm-aside-right>li:nth-child(3)").click(function() {
+    $(".sm-aside-right>li:nth-child(3)").click(function () {
         $(".zhuanTriangle").toggleClass("under");
         $(".sm-li-special").toggle();
         console.log(3);
@@ -49,7 +49,7 @@ $(function () {
     start();
 
 
-    $(window).resize(function() {
+    $(window).resize(function () {
         window_width = $(window).width();
         console.log(window_width);
         $(".banner>ul>li").css("width", window_width);
@@ -61,16 +61,18 @@ $(function () {
     //     return false;
     // },function() { start(); return false;});
 
-    $(".banner>ol>li").click(function() {
+    $(".banner>ol>li").click(function () {
         stop();
         var index = $(this).index();
         lightSpot(index);
         count = index;
         console.log(count);
-        translate_wid = count * window_width * -1 + "px"; 
+        translate_wid = count * window_width * -1 + "px";
         $(".banner>ul").stop();
-        $(".banner>ul").animate({left:translate_wid}, 2000);
-        setTimeout(function() {
+        $(".banner>ul").animate({
+            left: translate_wid
+        }, 2000);
+        setTimeout(function () {
             start();
         }, 2000);
         return false;
@@ -82,14 +84,16 @@ $(function () {
     }
 
     function start() {
-        timer = setInterval(function() {
+        timer = setInterval(function () {
             count++
-            if(count == 3) {
+            if (count == 3) {
                 translate_wid = count * window_width * -1 + "px";
                 lightSpot(0);
-                $(".banner>ul").animate({ left: translate_wid }, 2000);
-                setTimeout(function() {
-                    $(".banner>ul").css("left","0px");
+                $(".banner>ul").animate({
+                    left: translate_wid
+                }, 2000);
+                setTimeout(function () {
+                    $(".banner>ul").css("left", "0px");
                     count = 0;
                     console.log(2);
                 }, 2050);
@@ -98,7 +102,9 @@ $(function () {
             }
             lightSpot(count);
             translate_wid = count * window_width * -1 + "px";
-            $(".banner>ul").animate({left: translate_wid}, 2000);
+            $(".banner>ul").animate({
+                left: translate_wid
+            }, 2000);
             console.log(count);
         }, 4000)
     }
@@ -110,19 +116,22 @@ $(function () {
     }
 
 
-    $(".fixed-img").click(function() {
-       $("html,body").animate({scrollTop:0},1000);
+    $(".fixed-img").click(function () {
+        $("html,body").animate({
+            scrollTop: 0
+        }, 1000);
     })
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         var top = $(window).scrollTop();
         var win_width = $(window).width();
-        if(win_width <= 768) {
+        if (win_width <= 768) {
+            $(".fixed-img").fadeOut();
             return;
         }
-        if(top < 1000) {
+        if (top < 1000) {
             $(".fixed-img").fadeOut();
-        }else {
+        } else {
             $(".fixed-img").fadeIn();
         }
 
