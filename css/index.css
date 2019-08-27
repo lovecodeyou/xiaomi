@@ -313,6 +313,7 @@
      outline: none;
      float: right;
      margin-top: 24px;
+    
  }
 
  .head-middle input:focus {
@@ -328,6 +329,8 @@
      top: 76px;
      line-height: 30px;
      visibility: hidden;
+     z-index: 1000000;
+     background: white;
  }
 
  .head-middle .input-items p {
