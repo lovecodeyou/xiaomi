@@ -105,6 +105,12 @@ $(function () {
         } else {
             $(".sec-16>img").css("opacity", "1");
         }
+
+
+        if ($(window).scrollTop() > 200) {
+            $(".fixed-nav").slideDown();
+        }else
+            $(".fixed-nav").slideUp();
     })
 
     function vertical_center(elements) {
@@ -232,6 +238,8 @@ $(function () {
         sec9_oli.eq(count).siblings().removeClass("bg-red");
         start();
     })
+
+
 
 
 })

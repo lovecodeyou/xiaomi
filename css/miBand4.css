@@ -15,19 +15,38 @@
 
 
 
-/* .fixed-nav {
+.fixed-nav {
     width: 100%;
     height: 65px;
     position: fixed;
     left: 0;
     top: 0;
     box-shadow: 0 0 10px #ccc;
+    z-index: 2000000;
+    background: white;
+    display: none;
 }
 
 .fixed-nav .fixed-middle {
     width: 1226px;
     height: 65px;
     line-height: 65px;
+    margin: 0 auto;
+}
+
+.fixed-middle>div>a {
+    font-size: 12px;
+    line-height: 18px;
+    color: #616161;
+    transition: all 0.3s;
+}
+
+.fixed-middle .summary-a {
+    color: #ff6700
+}
+
+.fixed-middle>div>a:hover {
+    color: #ff6700;
 }
 
 .na-left {
@@ -36,7 +55,31 @@
 
 .na-right {
     float: right;
-} */
+}
+
+.na-right .btn-buy {
+    width: 118px;
+    height: 28px;
+    background: #ff6700;
+    margin-left: 6px;
+    transition: all 0.3s;
+    display: inline-block;
+    text-align:center;
+    line-height: 28px;
+   
+}
+
+.na-right .btn-buy a {
+    /* line-height: 28px !important; */
+    color: white;
+    font-size: 12px;
+}
+
+.na-right .btn-buy:hover {
+    background: #f25807;
+}
+
+
 
 
 
@@ -546,7 +589,6 @@ nav div>a:hover {
 .cotent .triangle {
     width: 0;
     height: 0;
-    border: 
 }
 
 .content>section {
@@ -797,7 +839,6 @@ nav div>a:hover {
     width: 42px;
     height: 42px;
     display: block;
-    vertical-align: middle;
 }
 
 .sec-20 .specialfont {
