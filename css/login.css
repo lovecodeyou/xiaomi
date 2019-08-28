@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: arial,
+        "Hiragino Sans GB",
+        "Microsoft YaHei",
+        微軟正黑體,
+        "儷黑 Pro",
+        sans-serif;
+}
+
+header img {
+    margin-left: 110px;
+}
+
+section {
+    width: 100%;
+    height: 370px;
+    background: url("../img/login/1.jpg") no-repeat top center;
+    /* background-size: cover; */
+    position: relative;
+}
+
+section>a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.mi-red {
+    color: #ff6700;
+}
+
+.login-box .btn {
+    background: #ff6700;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align:center;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.block-size-lg {
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    cursor:pointer;
+}
+
+.left-bottom-txt {
+    cursor: pointer;
+}
+
+
+
+
+.sm-font {
+    font-size: 14px;
+}
+
+ 
+
+
+.login-box input {
+    outline: none;
+    padding: 20px 16px 20px;
+    box-sizing: border-box;
+    margin-top: 17px;
+}
+
+
+.login-box {
+    position: absolute;
+    right: 110px;
+    bottom: 0;
+    background: white;
+    width: 410px;
+    box-sizing: border-box;
+    padding-left: 33px;
+    height: 332px;
+}
+
+.lb-top li{
+    float: left;
+    font-size: 24px;
+    padding: 0 35px 0;
+    margin-top: 30px;
+    margin-bottom: 23px;
+    cursor: pointer;
+}
+
+.lb-top li:first-child {
+    border-right: 2px solid #ccc;
+}
+
+.lb-bottom .small-notice{
+    margin-left: 95px;
+}
+
+
+
+
+.typing-register span,.typing-register input {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 50px;
+    cursor: pointer;
+    /* text-align:center; */
+}
+
+
+.one-input>span {
+    height: 100%;
+    width: 65px;
+    /* border: 1px solid rgb(224, 224, 224); */
+    border: 1px solid #ccc;
+    border-right: none;
+    text-align:center;
+}
+
+.one-input>input {
+    height: 100%;
+    width: 280px;
+     padding: 20px 16px 20px;
+     outline: none;
+     position: relative;
+     left: -4px;
+     top: -1px;
+}
+
+.two-input {
+    margin-top: 17px;
+}
+
+.two-input>input {
+    width: 235px;
+    outline: none;
+    padding: 20px 16px 20px;
+   
+}
+
+.two-input>span {
+    width: 110px;
+    border: 1px solid #ccc;
+    border-left: none;
+      position: relative;
+      left: -4px;
+      top: 1px;
+      text-align:center;
+      color: rgb(113, 113, 241);
+}
+
+
+
+
+.qr-code {
+    text-align:center;
+}
+
+.qr-code img {
+    width: 180px;
+    height: 160px;
+    margin-top: 65px;
+}
+
+
+footer {
+    text-align:center;
+    margin-top: 110px;
+     opacity: 0.7;
+     transition: all 0.5s;
+     color: black;
+}
+
+
+
+.f-top>a {
+    color: black;
+      opacity: 0.7;
+      transition: all 0.5s;
+}
+
+
+.f-top a:hover{
+    opacity: 1 ;
+}
+
+.f-bottom {
+    line-height: 50px;
+}
