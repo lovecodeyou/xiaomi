@@ -1,6 +1,13 @@
 $(function () {
 
 
+     $(".head-middle input").focus(function () {
+         $(".head-middle .search").css("border-color", "#ff6700");
+     })
+     $(".head-middle input").blur(function () {
+         $(".head-middle .search").css("border-color", "#ccc");
+     })
+
 
     $(".head input").focus(function () {
         $(".text-placeholder").css("visibility", "hidden");
@@ -10,7 +17,6 @@ $(function () {
     $(".head input").blur(function () {
         $(".text-placeholder").css("visibility", "visible");
         $(".input-items").css("visibility", "hidden");
-        $(".search").css("border-color", "black");
     })
 
 

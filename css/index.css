@@ -296,14 +296,20 @@
      margin-top: 24px;
      float: right;
      width: 50px;
-     height: 52px;
-     border: 1px solid rgb(163, 157, 157);
+     height: 50px;
+     /* border: 1px solid rgb(163, 157, 157); */
+     border: 1px solid #ccc;
      border-left: none;
-     background: url("../img/nav/05.png") no-repeat center center;
+     background: url("../img/nav/07.png") no-repeat center center;
+     background-size: 30px 30px;
+     transition: background 0.5s;
  }
 
  .head-middle .search:hover {
      background-color: #ff6700;
+     border-color: #ff6700;
+     background-image: url("../img/nav/06.png");
+     /* border: 1px solid #ccc; */
  }
 
  .head-middle input {
@@ -313,6 +319,7 @@
      outline: none;
      float: right;
      margin-top: 24px;
+     border: 1px solid #ccc;
     
  }
 
@@ -321,7 +328,7 @@
  }
 
  .head-middle .input-items {
-     width: 266px;
+     width: 265px;
      border: 1px solid #ff6700;
      border-top: none;
      position: absolute;

@@ -1,4 +1,14 @@
 $(function () {
+
+
+     $(".head-middle input").focus(function () {
+         $(".head-middle .search").css("border-color", "#ff6700");
+     })
+     $(".head-middle input").blur(function () {
+         $(".head-middle .search").css("border-color", "#ccc");
+     })
+
+
     var a = $(".display-title>span>a");
     var parent_a;
     a.mouseover(function () {
@@ -49,7 +59,6 @@ $(function () {
        $(".head input").blur(function () {
            $(".text-placeholder").css("visibility", "visible");
            $(".input-items").css("visibility", "hidden");
-           $(".search").css("border-color", "black");
        })
 
 
