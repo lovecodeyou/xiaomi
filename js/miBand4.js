@@ -60,18 +60,19 @@ $(function () {
 
     $(".close-video").click(function () {
         $(".modal-dialog-video").slideUp();
-        $(".modal-dislog-video2").slideUp();
+        $(".modal-dialog-video2").slideUp();
     })
 
     $(".open-modal-video").click(function () {
         modal_video.slideDown();
     })
 
-    $(".aVideo").click(function() {
-        alert(1);
-    })
+      $("#open-modal-video2").click(function () {
+          modal_video2.slideDown();
+          console.log(1);
+      })
 
-    console.log($("#open-modal-video2"));
+
 
     $(window).scroll(function () {
         var height = $(".sec-8").offset().top;

@@ -473,7 +473,7 @@ nav div>a:hover {
     left: 0;
     top: 0;
     background: rgba(0, 0, 0, 0.6);
-    z-index: 10000;
+    z-index: 10000000000;
     display: none;
 }
 
@@ -847,6 +847,8 @@ nav div>a:hover {
     width: 42px;
     height: 42px;
     display: block;
+    position: relative;
+    z-index: 100;
 }
 
 .sec-20 .specialfont {
