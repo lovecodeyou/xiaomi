@@ -62,80 +62,80 @@ $(function () {
 
             var endTime = new Date();
             time_increment = endTime - startTime;
-            if( time_increment <= 500 && move_increment < -100 ) {
-                  slide_id++;
-                  slide_button.eq((slide_id + 1) % 2).addClass("bg-white");
-                  slide_button.eq((slide_id + 1) % 2).siblings().removeClass("bg-white");
-                  console.log(slide_id);
-                  length_slide_bg_move = -(wd_slide_bg * slide_id) + "px";
-                  slide_bg.css("left", length_slide_bg_move);
+            if (time_increment <= 500 && move_increment < -100) {
+                slide_id++;
+                slide_button.eq((slide_id + 1) % 2).addClass("bg-white");
+                slide_button.eq((slide_id + 1) % 2).siblings().removeClass("bg-white");
+                console.log(slide_id);
+                length_slide_bg_move = -(wd_slide_bg * slide_id) + "px";
+                slide_bg.css("left", length_slide_bg_move);
 
-                  if (slide_id == 3) {
-                      slide_id = 1;
-                      setTimeout(function () {
-                          slide_bg.css("transition", "none");
-                          length_slide_bg_move = -(wd_slide_bg * slide_id) + "px";
-                          slide_bg.css("left", length_slide_bg_move);
-                      }, 1000)
-                      setTimeout(function () {
-                          slide_bg.css("transition", "left 1s");
-                      }, 1500)
-                  }
+                if (slide_id == 3) {
+                    slide_id = 1;
+                    setTimeout(function () {
+                        slide_bg.css("transition", "none");
+                        length_slide_bg_move = -(wd_slide_bg * slide_id) + "px";
+                        slide_bg.css("left", length_slide_bg_move);
+                    }, 1000)
+                    setTimeout(function () {
+                        slide_bg.css("transition", "left 1s");
+                    }, 1500)
+                }
             } else if (move_increment <= -(wd_slide_bg * 0.3)) {
-                 slide_id++;
-                 slide_button.eq((slide_id + 1) % 2).addClass("bg-white");
-                 slide_button.eq((slide_id + 1) % 2).siblings().removeClass("bg-white");
-                 console.log(slide_id);
-                 length_slide_bg_move = -(wd_slide_bg * slide_id) + "px";
-                 slide_bg.css("left", length_slide_bg_move);
+                slide_id++;
+                slide_button.eq((slide_id + 1) % 2).addClass("bg-white");
+                slide_button.eq((slide_id + 1) % 2).siblings().removeClass("bg-white");
+                console.log(slide_id);
+                length_slide_bg_move = -(wd_slide_bg * slide_id) + "px";
+                slide_bg.css("left", length_slide_bg_move);
 
-                 if (slide_id == 3) {
-                     slide_id = 1;
-                     setTimeout(function () {
-                         slide_bg.css("transition", "none");
-                         length_slide_bg_move = -(wd_slide_bg * slide_id) + "px";
-                         slide_bg.css("left", length_slide_bg_move);
-                     }, 1000)
-                     setTimeout(function () {
-                         slide_bg.css("transition", "left 1s");
-                     }, 1500)
-                 }
+                if (slide_id == 3) {
+                    slide_id = 1;
+                    setTimeout(function () {
+                        slide_bg.css("transition", "none");
+                        length_slide_bg_move = -(wd_slide_bg * slide_id) + "px";
+                        slide_bg.css("left", length_slide_bg_move);
+                    }, 1000)
+                    setTimeout(function () {
+                        slide_bg.css("transition", "left 1s");
+                    }, 1500)
+                }
             }
 
             if (time_increment <= 500 && move_increment > 100) {
-                 slide_id--;
-                 slide_button.eq((slide_id + 1) % 2).addClass("bg-white");
-                 slide_button.eq((slide_id + 1) % 2).siblings().removeClass("bg-white");
-                 length_slide_bg_move = -(wd_slide_bg * slide_id) + "px";
-                 slide_bg.css("left", length_slide_bg_move);
-                 if (slide_id == 0) {
-                     slide_id = 2;
-                     setTimeout(function () {
-                         slide_bg.css("transition", "none");
-                         length_slide_bg_move = -(wd_slide_bg * slide_id) + "px";
-                         slide_bg.css("left", length_slide_bg_move);
-                     }, 1000)
-                     setTimeout(function () {
-                         slide_bg.css("transition", "left 1s");
-                     }, 1500)
-                 }
+                slide_id--;
+                slide_button.eq((slide_id + 1) % 2).addClass("bg-white");
+                slide_button.eq((slide_id + 1) % 2).siblings().removeClass("bg-white");
+                length_slide_bg_move = -(wd_slide_bg * slide_id) + "px";
+                slide_bg.css("left", length_slide_bg_move);
+                if (slide_id == 0) {
+                    slide_id = 2;
+                    setTimeout(function () {
+                        slide_bg.css("transition", "none");
+                        length_slide_bg_move = -(wd_slide_bg * slide_id) + "px";
+                        slide_bg.css("left", length_slide_bg_move);
+                    }, 1000)
+                    setTimeout(function () {
+                        slide_bg.css("transition", "left 1s");
+                    }, 1500)
+                }
             } else if (move_increment >= (wd_slide_bg * 0.3)) {
-                 slide_id--;
-                 slide_button.eq((slide_id + 1) % 2).addClass("bg-white");
-                 slide_button.eq((slide_id + 1) % 2).siblings().removeClass("bg-white");
-                 length_slide_bg_move = -(wd_slide_bg * slide_id) + "px";
-                 slide_bg.css("left", length_slide_bg_move);
-                 if (slide_id == 0) {
-                     slide_id = 2;
-                     setTimeout(function () {
-                         slide_bg.css("transition", "none");
-                         length_slide_bg_move = -(wd_slide_bg * slide_id) + "px";
-                         slide_bg.css("left", length_slide_bg_move);
-                     }, 1000)
-                     setTimeout(function () {
-                         slide_bg.css("transition", "left 1s");
-                     }, 1500)
-                 }
+                slide_id--;
+                slide_button.eq((slide_id + 1) % 2).addClass("bg-white");
+                slide_button.eq((slide_id + 1) % 2).siblings().removeClass("bg-white");
+                length_slide_bg_move = -(wd_slide_bg * slide_id) + "px";
+                slide_bg.css("left", length_slide_bg_move);
+                if (slide_id == 0) {
+                    slide_id = 2;
+                    setTimeout(function () {
+                        slide_bg.css("transition", "none");
+                        length_slide_bg_move = -(wd_slide_bg * slide_id) + "px";
+                        slide_bg.css("left", length_slide_bg_move);
+                    }, 1000)
+                    setTimeout(function () {
+                        slide_bg.css("transition", "left 1s");
+                    }, 1500)
+                }
             }
 
         })
@@ -183,7 +183,36 @@ $(function () {
 
         // })
     })
+    $(".sec-two>div>ul>li").addClass("upward-move");
 
+    $(".upward-move").mouseover(function () {
+        $(this).animate({
+            top: "-10px"
+        }, 500);
+        console.log(1);
+    })
 
+    $(".upward-move").mouseout(function () {
+        $(this).animate({
+            top: "0px"
+        }, 500);
+    })
 
+    var num_secTwo_ul = $(".sec-two>div>ul").length / 2;
+    var wid_secTwo_ul = $(".sec-two>div>ul").outerWidth();
+    var sumWid_secTwo_ul = num_secTwo_ul * wid_secTwo_ul;
+    console.log(sumWid_secTwo_ul);
+   
+
+    setInterval(function() {
+         $(".sec-two>div>ul").animate({
+             left: "-" + sumWid_secTwo_ul + "px"
+         }, 30000, "linear");
+         $(".sec-two>div>ul").animate({
+             left: "0"
+         }, 30000, "linear");
+    }, 0);
+
+    // console.log($(".sec-two>div>ul").length);
+    // console.log($(".sec-two>div>ul").outerWidth());
 })
