@@ -201,7 +201,7 @@ $(function () {
     var num_secTwo_ul = $(".sec-two>div>ul").length / 2;
     var wid_secTwo_ul = $(".sec-two>div>ul").outerWidth();
     var sumWid_secTwo_ul = num_secTwo_ul * wid_secTwo_ul;
-    console.log(sumWid_secTwo_ul);
+    // console.log(sumWid_secTwo_ul);
    
 
     setInterval(function() {
@@ -215,4 +215,22 @@ $(function () {
 
     // console.log($(".sec-two>div>ul").length);
     // console.log($(".sec-two>div>ul").outerWidth());
+
+    
+    // $(".modal-box").css("height", $(window).height() + "px");
+    // var a = $(".modal-box").css("height");
+
+    $(".sec-video img").click(function() {
+        $(".modal-box").css("display", "block");
+        // $(".modal-box").css("height", $(window).height() + "px");
+        $(".modal-box video")[0].play();
+
+    })
+
+   $(".btn-close").click(function() {
+       $(".modal-box").css("display", "none");
+       $(".modal-box video")[0].pause();
+       $(".modal-box video")[0].currentTime = 0;
+   })
+
 })
